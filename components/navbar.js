@@ -70,34 +70,28 @@ const Navbar = props => {
           flexGrow={1}
           mt={{ base: 4, nmd: 0 }}
         >
-          
           <LinkItem href="/works" path={path}>
             Works
           </LinkItem>
-          
+
           <LinkItem href="/contact" path={path}>
             Contact
           </LinkItem>
-          <LinkItem
+          <Link
             _target="_blank"
             href="https://github.com/RafaelDubois/Checkpoint4-Portfolio"
-            path={path}
-            pl={2}
+            display="inline-flex"
+            alignItems="center"
             style={{ gap: 4 }}
-            
+            pl={2}
           >
-            <Text display="inline-flex"
-            alignItems="center">
-              <IoLogoGithub/>
-            Source 
-            {''}
-            
-            </Text>
-          </LinkItem>
+            <IoLogoGithub />
+            Source
+          </Link>
         </Stack>
         <Box flex={1} mt={1.5} align="right">
           <ThemeToggleButton />
-          <Box ml={2} display={{ base: 'inline-block', md:'none'}}>
+          <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
             <Menu>
               <MenuButton
                 as={IconButton}
@@ -115,7 +109,7 @@ const Navbar = props => {
                 <NextLink href="/contact" passHref>
                   <MenuItem as={Link}>Contact</MenuItem>
                 </NextLink>
-                <MenuItem as={Link} href="https://github.com/RafaelDubois">
+                <MenuItem as={Link} href="https://github.com/RafaelDubois/Checkpoint4-Portfolio">
                   View Source
                 </MenuItem>
               </MenuList>
