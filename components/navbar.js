@@ -27,6 +27,7 @@ const LinkItem = ({ href, path, children }) => {
     <NextLink href={href}>
       <Link
         p={2}
+        borderRadius={6}
         bg={active ? 'glassTeal' : undefined}
         color={active ? '#222023' : inactiveColor}
       >
@@ -87,9 +88,10 @@ const Navbar = props => {
           >
             <Text display="inline-flex"
             alignItems="center">
+              <IoLogoGithub/>
             Source 
             {''}
-            <IoLogoGithub/>
+            
             </Text>
           </LinkItem>
         </Stack>

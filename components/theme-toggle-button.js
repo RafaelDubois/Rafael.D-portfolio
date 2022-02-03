@@ -19,8 +19,17 @@ const ThemeToggleButton = () => {
         >
           <IconButton
             aria-label="Toggle theme"
-            colorScheme={useColorModeValue('purple', 'orange')}
-            icon={useColorModeValue(<MoonIcon />, <SunIcon />)}
+            icon={useColorModeValue(<IconButton
+                variant='outline'
+                colorScheme='linkedin'
+                aria-label='Send email'
+                icon={<MoonIcon />}
+              />,<IconButton
+              variant='outline'
+              colorScheme='red'
+              aria-label='Send email'
+              icon={<SunIcon />}
+            />)}
             onClick={toggleColorMode}
           ></IconButton>
         </motion.div>

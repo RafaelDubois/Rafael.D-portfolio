@@ -35,8 +35,7 @@ const Page = () => {
           textAlign="center"
           bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         >
-          Hello, I&apos;m a front-end developper based in Reunion Island
-          (France) !
+          Hello, I&apos;m a front-end developper based in France !
         </Box>
 
         <Box display={{ md: 'flex' }}>
@@ -53,12 +52,12 @@ const Page = () => {
             textAlign="center"
           >
             <Image
-              borderColor="whiteAlpha.800"
+              borderColor={useColorModeValue('whiteAlpha.500','whiteAlpha.200')}
               borderWidth={2}
               borderStyle="solid"
               maxWidth="100px"
               display="inline-block"
-              borderRadius="full"
+              borderRadius="50%"
               src="/images/rafael.jpg"
               alt="Profile image"
             />
