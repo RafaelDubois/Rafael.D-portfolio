@@ -1,4 +1,4 @@
-import { Container, Heading, SimpleGrid, useColorModeValue } from '@chakra-ui/react'
+import { Container, Heading, SimpleGrid, Text, useColorModeValue } from '@chakra-ui/react'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 
@@ -19,7 +19,7 @@ const Works = () => (
         Projects / Collaborations
       </Heading>
 
-      <SimpleGrid columns={[1, 1, 2]} gap={6}>
+      <SimpleGrid columns={[1, 1, 1]} gap={6}>
         
         <Section>
           <WorkGridItem
@@ -32,14 +32,16 @@ const Works = () => (
           </WorkGridItem>
         </Section>
 
-        <Section delay={0.1}>
+        <Section delay={0.1} >
           <WorkGridItem
             id="Dr. BonVoyage"
             title="Dr. BonVoyage"
             thumbnail={thumbDrbonvoyage}
 
           >
+            <Text text-align='start'>
             An app coded in React Native with a real customer, API AWS serverless for the back, this app was made to help people travelling across the world with useful medical informations of many sorts
+            </Text>
           </WorkGridItem>
         </Section>
         <Section>

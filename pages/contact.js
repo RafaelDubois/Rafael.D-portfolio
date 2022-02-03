@@ -1,43 +1,75 @@
-import React from 'react';
-import { Container, Heading, SimpleGrid, useColorModeValue } from '@chakra-ui/react'
+import React, { useState } from 'react'
+import {
+  Box,
+  Container,
+  Heading,
+  Image,
+  SimpleGrid,
+  useColorModeValue,
+  Link,
+  Button,
+  FormLabel,
+  Textarea,
+  Input
+} from '@chakra-ui/react'
 import Section from '../components/section'
-
+import Layout from '../components/layouts/article'
+import Paragraph from '../components/paragraph'
+import NextLink from 'next/link'
 
 const Contact = () => {
-    return (
-        <Container>
-         <Heading as="h3" fontSize={20} mb={4} mt={4} textUnderlineOffset="3px"
-            textDecorationLine="underline "
-            text-decoration-color={useColorModeValue(
-              'whiteAlpha.500',
-              'whiteAlpha.200'
-            )}>
-          Projects / Collaborations
-        </Heading>
-  
-        <SimpleGrid columns={[1, 1, 2]} gap={6}>
+  const [status, setStatus] = useState('Submit')
+  const handleSubmit = async e => {
+    e.preventDefault()
+    setStatus('Sending...')
+    const { name, email, message } = e.target.elements
+    let details = {
+      name: name.value,
+      email: email.value,
+      message: message.value
+    }
+    let response = await fetch('http://localhost:5000/contact', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json;charset=utf-8'
+      },
+      body: JSON.stringify(details)
+    })
+    setStatus('Submit')
+    let result = await response.json()
+    alert(result.status)
+  }
+  return (
+    <Layout>
+      <Container delay={5}>
+        <form onSubmit={handleSubmit}>
+          <Box
           
-          <Section>
+            borderRadius="lg"
+            mt={2}
+            mb={6}
+            p={3}
+            textAlign="center"
+            bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
+          >
             
-             A responsive website coded in React.js, using the API of the strasbourg company of transport (CTS) to help people getting informations about transportation in Strasbourg and/or other useful informations like parkings location or tickets point of sales, in an easily usable and fast way
+              <FormLabel htmlFor="name" mt={2} ml={2}>Name:</FormLabel>
+              <Input type="text" id="name" required />
             
-          </Section>
-  
-          <Section delay={0.1}>
             
-              An app coded in React Native with a real customer, API AWS serverless for the back, this app was made to help people travelling across the world with useful medical informations of many sorts
-           
-          </Section>
-          <Section>
+              <FormLabel htmlFor="email" mt={2} ml={2}>Email:</FormLabel>
+              <Input type="email" id="email" required />
             
-              A Static html/css site first project after just 3 weeks of studying
             
-          </Section>
-        </SimpleGrid> 
-  
-        
+              <FormLabel htmlFor="message" mt={2} ml={2}>Message:</FormLabel>
+              <Textarea id="message" required />
+            
+            <Button type="submit"mt={6} mb={2}>{status}</Button>
+          </Box>
+        </form>
       </Container>
-    );
-};
+    </Layout>
+  )
+}
 
-export default Contact;
+export default Contact

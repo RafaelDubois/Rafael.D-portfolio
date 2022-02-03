@@ -10,7 +10,6 @@ import {
   MenuItem,
   MenuList,
   Stack,
-  Text,
   useColorModeValue
 } from '@chakra-ui/react'
 import NextLink from 'next/link'
@@ -30,6 +29,7 @@ const LinkItem = ({ href, path, children }) => {
         borderRadius={6}
         bg={active ? 'glassTeal' : undefined}
         color={active ? '#222023' : inactiveColor}
+        
       >
         {children}
       </Link>
@@ -68,7 +68,7 @@ const Navbar = props => {
           width={{ base: 'full', md: 'auto' }}
           alignItems="center"
           flexGrow={1}
-          mt={{ base: 4, nmd: 0 }}
+          
         >
           <LinkItem href="/works" path={path}>
             Works
@@ -89,14 +89,14 @@ const Navbar = props => {
             Source
           </Link>
         </Stack>
-        <Box flex={1} mt={1.5} align="right">
+        <Box flex={1} align="right" mt={1}>
           <ThemeToggleButton />
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
             <Menu>
               <MenuButton
                 as={IconButton}
                 icon={<HamburgerIcon />}
-                variant="outline"
+                variant="ghost"
                 aria-label="Options"
               />
               <MenuList>
