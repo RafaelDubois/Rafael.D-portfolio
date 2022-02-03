@@ -88,7 +88,7 @@ const Page = () => {
           </Paragraph>
           <Box align="center" my={4}>
             <NextLink href="/works">
-              <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+              <Button rightIcon={<ChevronRightIcon />} colorScheme="teal" mt={7}>
                 My portfolio
               </Button>
             </NextLink>
@@ -135,10 +135,10 @@ const Page = () => {
               'whiteAlpha.500',
               'whiteAlpha.200'
             )}
-          >
+           >
             What I ♥
           </Heading>
-          <Paragraph>
+          <Paragraph >
             Art,{' '}
             <Link
               href="https://www.youtube.com/playlist?list=PL46IFNQW_l3go3wKwe4Hh4sSUwdMj_3Ff/"
@@ -162,6 +162,7 @@ const Page = () => {
               'whiteAlpha.500',
               'whiteAlpha.200'
             )}
+            
           >
             On the web
           </Heading>
@@ -200,7 +201,7 @@ const Page = () => {
               </Link>
             </ListItem>
           </List>
-          <Heading as="h3" variant="section-title" mb={5}>
+          <Heading as="h3" variant="section-title" mb={5} mt={5}>
             Tools used to build this website :
           </Heading>
           <SimpleGrid columns={[1, 2, 2]} gap={6}>
@@ -237,7 +238,7 @@ const Page = () => {
 
           <Box align="center" my={4}>
             <NextLink href="/contact">
-              <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+              <Button rightIcon={<ChevronRightIcon />} colorScheme="teal" mt={2}>
                 Contact
               </Button>
             </NextLink>

@@ -2,7 +2,7 @@ import { useState, useEffect, useRef, useCallback } from 'react'
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 import { loadGLTFModel } from '../lib/model'
-import { PcSpinner, PcContainer } from './voxel-dog-loader'
+import { PcSpinner, PcContainer } from './voxel-pc-loader'
 
 function easeOutCirc(x) {
   return Math.sqrt(1 - Math.pow(x - 1, 4))
@@ -16,9 +16,9 @@ const VoxelPc = () => {
   const [target] = useState(new THREE.Vector3(-0.5, 1.2, 0))
   const [initialCameraPosition] = useState(
     new THREE.Vector3(
-      20 * Math.sin(0.2 * Math.PI),
-      10,
-      20 * Math.cos(0.2 * Math.PI)
+      27 * Math.sin(0.2 * Math.PI),
+      17,
+      27 * Math.cos(0.2 * Math.PI)
     )
   )
   const [scene] = useState(new THREE.Scene())
@@ -53,13 +53,13 @@ const VoxelPc = () => {
 
       // 640 -> 240
       // 8   -> 6
-      const scale = scH * 0.005 + 4.8
+      const scale = scH * 0.069 + 4.8
       const camera = new THREE.OrthographicCamera(
         -scale,
         scale,
         scale,
         -scale,
-        0.01,
+        0.05,
         50000
       )
       camera.position.copy(initialCameraPosition)

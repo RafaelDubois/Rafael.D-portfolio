@@ -4,7 +4,7 @@ import { WorkGridItem } from '../components/grid-item'
 
 import thumbFives from '../public/images/works/Captureprojet1.png'
 import thumbStraffic from '../public/images/works/Captureprojet2.png'
-import thumbDrbonvoyage from '../public/images/works/Captureprojet3.png'
+import thumbDrbonvoyage from '../public/images/works/Captureprojet3test.png'
 
 
 const Works = () => (
@@ -26,6 +26,7 @@ const Works = () => (
             id="Straffic"
             title="Straffic"
             thumbnail={thumbStraffic}
+            height={200}
           >
            A responsive website coded in React.js, using the API of the strasbourg company of transport (CTS) to help people getting informations about transportation in Strasbourg and/or other useful informations like parkings location or tickets point of sales, in an easily usable and fast way
           </WorkGridItem>
@@ -36,6 +37,7 @@ const Works = () => (
             id="Dr. BonVoyage"
             title="Dr. BonVoyage"
             thumbnail={thumbDrbonvoyage}
+
           >
             An app coded in React Native with a real customer, API AWS serverless for the back, this app was made to help people travelling across the world with useful medical informations of many sorts
           </WorkGridItem>
