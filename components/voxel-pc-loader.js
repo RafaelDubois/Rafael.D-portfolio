@@ -17,8 +17,8 @@ export const PcContainer = forwardRef(({ children }, ref) => (
     ref={ref}
     className="voxel-pc"
     m="auto"
-    mt={['-20px', '-60px', '-69px']}
-    mb={['-40px', '-140px', '-269px']}
+    mt={['-20px', '-60px', '-95px']}
+    mb={['-40px', '-140px', '-250px']}
     w={[280, 480, 640]}
     h={[280, 480, 640]}
     position="relative"
