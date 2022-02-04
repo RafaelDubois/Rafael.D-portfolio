@@ -6,7 +6,8 @@ import {
   Button,
   FormLabel,
   Textarea,
-  Input
+  Input,
+  Heading
 } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
 import { useAlert } from 'react-alert'
@@ -49,8 +50,22 @@ const Contact = () => {
   return (
     <Layout>
       <Container delay={5}>
-        <form onSubmit={handleSubmit}>
+      <Heading
+            as="h3"
+            variant="section-title"
+            textUnderlineOffset="3px"
+            textDecorationLine="underline "
+            text-decoration-color={useColorModeValue(
+              'whiteAlpha.500',
+              'whiteAlpha.200'
+            )}
+            mb={7}
+          >
+            Contact me here :
+          </Heading>
+        <form onSubmit={handleSubmit} >
           <Box
+          boxShadow= "rgba(0, 0, 0, 0.2) 0px 20px 30px;"
             borderRadius="lg"
             mt={2}
             mb={6}
