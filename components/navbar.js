@@ -22,12 +22,13 @@ import { IoLogoGithub } from 'react-icons/io5'
 const LinkItem = ({ href, path, children }) => {
   const active = path === href
   const inactiveColor = useColorModeValue('gray220', 'whiteAlpha.950')
+  const navcolor =useColorModeValue('#008CC9', '#FDB2B2')
   return (
     <NextLink href={href}>
       <Link
         p={2}
         borderRadius={6}
-        bg={active ? 'glassTeal' : undefined}
+        bg={active ? navcolor : undefined}
         color={active ? '#222023' : inactiveColor}
         
       >

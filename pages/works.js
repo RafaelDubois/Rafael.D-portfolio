@@ -10,7 +10,7 @@ import thumbDrbonvoyage from '../public/images/works/Captureprojet3test.png'
 const Works = () => (
   
     <Container>
-      <Heading as="h3" fontSize={20} mb={4} mt={4} textUnderlineOffset="3px"
+      <Heading as="h3" fontSize={20} mb={7} mt={4} textUnderlineOffset="3px"
           textDecorationLine="underline "
           text-decoration-color={useColorModeValue(
             'whiteAlpha.500',
