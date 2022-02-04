@@ -13,7 +13,7 @@ export default function contactapi (req, res) {
     });
     
     const mailData = {
-        from: req.body.name,
+        from: req.body.email,
         to: process.env.email,
         subject: `Message From ${req.body.name}`,
         text: req.body.message + " | Sent from: " + req.body.email,

@@ -5,10 +5,11 @@ import { WorkGridItem } from '../components/grid-item'
 import thumbFives from '../public/images/works/Captureprojet1.png'
 import thumbStraffic from '../public/images/works/Captureprojet2.png'
 import thumbDrbonvoyage from '../public/images/works/Captureprojet3test.png'
+import Layout from '../components/layouts/article'
 
 
 const Works = () => (
-  
+  <Layout>
     <Container>
       <Heading as="h3" fontSize={20} mb={7} mt={4} textUnderlineOffset="3px"
           textDecorationLine="underline "
@@ -19,7 +20,7 @@ const Works = () => (
         Projects / Collaborations
       </Heading>
 
-      <SimpleGrid columns={[1, 1, 1]} gap={6}>
+      <SimpleGrid columns={[1, 1, 1]} gap={6} textAlign='start'>
         
         <Section>
           <WorkGridItem
@@ -53,6 +54,7 @@ const Works = () => (
 
       
     </Container>
+    </Layout>
 )
 
 export default Works
