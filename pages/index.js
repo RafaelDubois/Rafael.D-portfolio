@@ -204,35 +204,41 @@ const Page = () => {
           <Heading as="h3" variant="section-title" mb={5} mt={5}>
             Tools used to build this website :
           </Heading>
-          <SimpleGrid columns={[1, 2, 2]} gap={6}>
-            <GridItem textAlign="center">
+          <SimpleGrid columns={[1, 2, 2]} gap={6} alignItems="center">
+            <GridItem textAlign="center"  mt={2}>
               <a href="https://nextjs.org/" target="blank">
                 <Image
                   src="./images/imageReactNext.jpg"
                   height={140}
                   width={240}
                   borderRadius={25}
+                  ml='auto'
+                  mr='auto'
                 />
               </a>
               <Text fontWeight="bold" mt={4} mb={1}>
                 ReactJs and Next.js
               </Text>
+              <Text >
               An open-source front-end JavaScript library, and a popular
               framework.
+              </Text>
             </GridItem>
-            <GridItem textAlign="center">
+            <GridItem textAlign="center" mt={2}>
               <a href="https://threejs.org/" target="blank">
                 <Image
                   src="./images/imagethree.png"
                   height={140}
                   width={240}
                   borderRadius={25}
+                  ml='auto'
+                  mr='auto'
                 />
               </a>
               <Text fontWeight="bold" mt={4} mb={1}>
                 ThreeJs
               </Text>
-              A 3D framework for React
+              A 3D framework for React, that helps render object in any website using React
             </GridItem>
           </SimpleGrid>
 
