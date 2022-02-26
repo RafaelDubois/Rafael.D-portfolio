@@ -9,7 +9,7 @@ import Layout from '../components/layouts/article'
 
 
 const Works = () => (
-  <Layout>
+  <Layout title="Works">
     <Container>
       <Heading as="h3" fontSize={20} mb={7} mt={4} textUnderlineOffset="3px"
           textDecorationLine="underline "
@@ -21,10 +21,9 @@ const Works = () => (
       </Heading>
 
       <SimpleGrid columns={[1, 1, 1]} gap={6} textAlign='start'>
-        
         <Section>
           <WorkGridItem
-            id="Straffic"
+            id="straffic"
             title="Straffic"
             thumbnail={thumbStraffic}
             height={200}
@@ -35,7 +34,7 @@ const Works = () => (
 
         <Section delay={0.1} >
           <WorkGridItem
-            id="Dr. BonVoyage"
+            id="drbonvoyage"
             title="Dr. BonVoyage"
             thumbnail={thumbDrbonvoyage}
 
@@ -46,7 +45,7 @@ const Works = () => (
           </WorkGridItem>
         </Section>
         <Section>
-          <WorkGridItem id="Fives" title="FIVES" thumbnail={thumbFives}>
+          <WorkGridItem id="fives" title="FIVES" thumbnail={thumbFives}>
             A Static html/css site first project after just 3 weeks of studying
           </WorkGridItem>
         </Section>
