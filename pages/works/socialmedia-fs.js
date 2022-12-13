@@ -6,18 +6,18 @@ import Layout from '../../components/layouts/article'
 
 
 const Work = () => (
-  <Layout title="Straffic">
+  <Layout title="mesmoires-app">
     <Container>
       <Title>
-        Straffic <Badge>2021-</Badge>
+        MesMoires / Social-media-app <Badge>2022-</Badge>
       </Title>
       <P>
-      A responsive website coded in React.js, using the API of the strasbourg company of transport (CTS) to help people getting informations faster 
+      An app coded in React.js and Node/Mongodb for the back-end, this app is a demo/personnal project to practice my back-end, it has signup and signin and anybody can create a post, comment and like each others posts.
       </P>
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Website</Meta>
-          <Link href="https://github.com/RafaelDubois/strasbourg-js-2109-project2-strafic">
+          <Link href="https://mesmoires-app.vercel.app/">
             View Source <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
@@ -27,11 +27,11 @@ const Work = () => (
         </ListItem>
         <ListItem>
           <Meta>Stack</Meta>
-          <span>NodeJS, ReactJS and MUI Framework</span>
+          <span>React.js, Mui, Redux, Node/Express</span>
         </ListItem>
       </List>
 
-      <WorkImage src="/images/works/Captureprojet2.png" alt="straffic" />
+      <WorkImage src="/images/works/Captureprojet7.png" alt="mesmoires" />
     </Container>
   </Layout>
 )
