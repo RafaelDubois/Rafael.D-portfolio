@@ -6,18 +6,18 @@ import Layout from '../../components/layouts/article'
 
 
 const Work = () => (
-  <Layout title="Straffic">
+  <Layout title="ecommerce">
     <Container>
       <Title>
-        Straffic <Badge>2021-</Badge>
+        E-Commerce Sanity / Stripe<Badge>2022-</Badge>
       </Title>
       <P>
-      A responsive website coded in React.js, using the API of the strasbourg company of transport (CTS) to help people getting informations faster 
+      An app coded in Next.js and Stripe / Sanity for the serverless back, this app is a demo/personnal project to use sanity as a database, that can be modified by the client at anytime and rendering it dinamically, and also to be able to make a real secured payment with stripe.
       </P>
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Website</Meta>
-          <Link href="https://github.com/RafaelDubois/strasbourg-js-2109-project2-strafic">
+          <Link href="https://e-commerce-sanity-stripe-iota.vercel.app/">
             View Source <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
@@ -27,11 +27,11 @@ const Work = () => (
         </ListItem>
         <ListItem>
           <Meta>Stack</Meta>
-          <span>NodeJS, ReactJS and MUI Framework</span>
+          <span>Next.js, Mui, Sanity, Stripe</span>
         </ListItem>
       </List>
 
-      <WorkImage src="/images/works/Captureprojet2.png" alt="straffic" />
+      <WorkImage src="/images/works/Captureprojet5.png" alt="ecommerce" />
     </Container>
   </Layout>
 )

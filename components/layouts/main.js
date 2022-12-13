@@ -4,6 +4,7 @@ import React from 'react'
 import Navbar from '../navbar'
 import VoxelPc from '../voxel-pc'
 import { noSSR } from 'next/dynamic'
+import Footer from '../footer'
 
 const Main = ({ children, router }) => {
   return (
@@ -20,6 +21,8 @@ const Main = ({ children, router }) => {
         <VoxelPc />
 
         {children}
+        <Footer/>
+        
       </Container>
     </Box>
   )

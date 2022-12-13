@@ -6,18 +6,18 @@ import Layout from '../../components/layouts/article'
 
 
 const Work = () => (
-  <Layout title="Straffic">
+  <Layout title="youtube-clone">
     <Container>
       <Title>
-        Straffic <Badge>2021-</Badge>
+        Youtube-Clone<Badge>2022-</Badge>
       </Title>
       <P>
-      A responsive website coded in React.js, using the API of the strasbourg company of transport (CTS) to help people getting informations faster 
+      An app coded in React.js and axios for the back this app is a demo/personnal project, to use an Api and recreate a small youtube Ui with search results.
       </P>
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Website</Meta>
-          <Link href="https://github.com/RafaelDubois/strasbourg-js-2109-project2-strafic">
+          <Link href="https://youtube-clone-lyart-tau.vercel.app/">
             View Source <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
@@ -27,11 +27,11 @@ const Work = () => (
         </ListItem>
         <ListItem>
           <Meta>Stack</Meta>
-          <span>NodeJS, ReactJS and MUI Framework</span>
+          <span>React.js, Mui, Axios, YoutubeV3 Api</span>
         </ListItem>
       </List>
 
-      <WorkImage src="/images/works/Captureprojet2.png" alt="straffic" />
+      <WorkImage src="/images/works/Captureprojet6.png" alt="youtube-clone" />
     </Container>
   </Layout>
 )
