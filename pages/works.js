@@ -5,7 +5,7 @@ import { WorkGridItem } from '../components/grid-item'
 import thumbFives from '../public/images/works/Captureprojet1.png'
 import thumbStraffic from '../public/images/works/Captureprojet2.png'
 import thumbDrbonvoyage from '../public/images/works/Captureprojet3test.png'
-import thumbYogaDanse from "../public/images/works/Captureprojet4test.png"
+import thumbYogaDanse from "../public/images/works/Captureprojet4.png"
 import thumbEcommerce from "../public/images/works/Captureprojet5test.png"
 import thumbYoutubeclone from "../public/images/works/Captureprojet6test.png"
 import thumbMesmoires from "../public/images/works/Captureprojet7test.png"
