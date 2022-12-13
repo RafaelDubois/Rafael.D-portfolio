@@ -28,7 +28,7 @@ const Works = () => (
      <Section>
           <WorkGridItem
             id="mesmoires-app"
-            title="mesmoires-app"
+            title="Mesmoires Social-Media-app"
             thumbnail={thumbMesmoires}
 
           >
@@ -64,7 +64,7 @@ const Works = () => (
         <Section delay={0.1}>
           <WorkGridItem
             id="youtube-clone"
-            title="Youtube Clone "
+            title="Youtube Clone"
             thumbnail={thumbYoutubeclone}
 
           >
